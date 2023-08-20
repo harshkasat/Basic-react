@@ -1,6 +1,22 @@
-import Message  from "./Message";
+// import Message  from "./Message";
 
-function App(){
-  return <div><Message></Message></div>
+import ListGroup from "./components/ListGroup";
+
+function App() {
+  let items = [
+    "New York",
+    "India",
+    "Canada",
+    "France",
+    "Germany",
+    "United States",
+    "Australia",
+    "China",
+  ];
+  return (
+    <div>
+      <ListGroup items={items} heading="Country Name"></ListGroup>
+    </div>
+  );
 }
 export default App;
